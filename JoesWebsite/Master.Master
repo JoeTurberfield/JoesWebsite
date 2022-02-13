@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="JoesWebsite.Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Joes Website
+    </title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <!-- Jquery -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Sweet Alert 2 -->
+    <script src="sweetalert2/sweetalert2.all.min.js"></script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Index.aspx">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navSystem" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                System
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                <% if (IsAdmin) { %>
+                                <a class="dropdown-item" href="Register.aspx">Register New Account</a>
+                                <% } %>
+                                <a class="dropdown-item" href="AddPerson.aspx">Add New Person</a>
+                                <div class="dropdown-divider"></div>
+                                <%--<a class="dropdown-item" href="#">Help</a>--%>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Games
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="NoughtsAndCrosses.aspx">Noughts and Crosses</a>
+                                <%--<a class="dropdown-item" href="#">In Development</a>--%>                               
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Logout.aspx">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Child Pages Content -->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <script type="text/javascript">
+
+        </script>
+
+    </form>
+</body>
+</html>

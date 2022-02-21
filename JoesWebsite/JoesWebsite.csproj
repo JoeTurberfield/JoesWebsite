@@ -67,20 +67,20 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AddPerson.aspx" />
-    <Content Include="AndrewsGame.aspx" />
+    <Content Include="Person\AddPerson.aspx" />
+    <Content Include="Games\AndrewsGame.aspx" />
     <Content Include="Index.aspx" />
-    <Content Include="Login.aspx" />
-    <Content Include="LoginPage.aspx" />
-    <Content Include="Logout.aspx" />
-    <Content Include="NoughtsAndCrosses.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\LoginPage.aspx" />
+    <Content Include="Account\Logout.aspx" />
+    <Content Include="Games\NoughtsAndCrosses.aspx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Content Include="RecoverAccount.aspx" />
-    <Content Include="Register.aspx" />
-    <Content Include="TheMaze.aspx" />
+    <Content Include="Account\RecoverAccount.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Games\TheMaze.aspx" />
     <Content Include="Web References\joesWS\GameResponse.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </Content>
@@ -89,21 +89,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account.cs" />
-    <Compile Include="AddPerson.aspx.cs">
+    <Compile Include="Person\AddPerson.aspx.cs">
       <DependentUpon>AddPerson.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddPerson.aspx.designer.cs">
+    <Compile Include="Person\AddPerson.aspx.designer.cs">
       <DependentUpon>AddPerson.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AndrewsGame.aspx.cs">
+    <Compile Include="Games\AndrewsGame.aspx.cs">
       <DependentUpon>AndrewsGame.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AndrewsGame.aspx.designer.cs">
+    <Compile Include="Games\AndrewsGame.aspx.designer.cs">
       <DependentUpon>AndrewsGame.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ImageHandler.ashx.cs">
+    <Compile Include="ImageHandler\ImageHandler.ashx.cs">
       <DependentUpon>ImageHandler.ashx</DependentUpon>
     </Compile>
     <Compile Include="Index.aspx.cs">
@@ -113,25 +113,25 @@
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
+    <Compile Include="Account\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Login.aspx.designer.cs">
+    <Compile Include="Account\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LoginPage.aspx.cs">
+    <Compile Include="Account\LoginPage.aspx.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="LoginPage.aspx.designer.cs">
+    <Compile Include="Account\LoginPage.aspx.designer.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Logout.aspx.cs">
+    <Compile Include="Account\Logout.aspx.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Logout.aspx.designer.cs">
+    <Compile Include="Account\Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="Master.Master.cs">
@@ -141,11 +141,11 @@
     <Compile Include="Master.Master.designer.cs">
       <DependentUpon>Master.Master</DependentUpon>
     </Compile>
-    <Compile Include="NoughtsAndCrosses.aspx.cs">
+    <Compile Include="Games\NoughtsAndCrosses.aspx.cs">
       <DependentUpon>NoughtsAndCrosses.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="NoughtsAndCrosses.aspx.designer.cs">
+    <Compile Include="Games\NoughtsAndCrosses.aspx.designer.cs">
       <DependentUpon>NoughtsAndCrosses.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -154,27 +154,27 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="RecoverAccount.aspx.cs">
+    <Compile Include="Account\RecoverAccount.aspx.cs">
       <DependentUpon>RecoverAccount.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="RecoverAccount.aspx.designer.cs">
+    <Compile Include="Account\RecoverAccount.aspx.designer.cs">
       <DependentUpon>RecoverAccount.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Register.aspx.cs">
+    <Compile Include="Account\Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Register.aspx.designer.cs">
+    <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="Response.cs" />
     <Compile Include="Security.cs" />
-    <Compile Include="TheMaze.aspx.cs">
+    <Compile Include="Games\TheMaze.aspx.cs">
       <DependentUpon>TheMaze.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TheMaze.aspx.designer.cs">
+    <Compile Include="Games\TheMaze.aspx.designer.cs">
       <DependentUpon>TheMaze.aspx</DependentUpon>
     </Compile>
     <Compile Include="Web References\joesWS\Reference.cs">
@@ -185,7 +185,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Master.Master" />
-    <Content Include="ImageHandler.ashx" />
+    <Content Include="ImageHandler\ImageHandler.ashx" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Web References\joesWS\JoesWebService.wsdl" />
@@ -219,9 +219,7 @@
       <CachedSettingsPropName>JoesWebsite_joesWS_JoesWebService</CachedSettingsPropName>
     </WebReferenceUrl>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Bootstrap\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
